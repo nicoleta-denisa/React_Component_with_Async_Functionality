@@ -12,9 +12,10 @@ function Counter () {
 
     return (
         <div className={ styles.container }>
+            <h1>Counter</h1>
             <button onClick={ () => handleClick(1) } className={ styles.btn }>+</button>
             <button onClick={ () => handleClick(-1) } className={ styles.btn }>-</button>
-            <strong className={ styles.output }>{ count }</strong>
+            <strong className={ count >= 0 ? styles['output--positive'] : styles['output--negative'] }>{ count }</strong>
         </div>
     )
 }

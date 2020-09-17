@@ -1,0 +1,22 @@
+import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
+
+export default function Nav() {
+    return (
+        <nav className="navbar navbar-expand navbar-dark bg-dark">
+            <Link className="navbar-brand" to="/">Games App</Link>
+            
+
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul className="navbar-nav mr-auto">
+                    <li className="nav-item">
+                        <NavLink className="nav-link" exact to="/">Home <span className="sr-only">(current)</span></NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" exact to="/games">Games</NavLink>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    )
+}

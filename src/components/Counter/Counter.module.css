@@ -5,9 +5,16 @@
     font-family: monospace;
 }
 
-.output {
+.output--positive {
     color: #bada55;
     display: block;
+    font-size: 2rem;
+}
+
+.output--negative {
+    color: #cc0000;
+    display: block;
+    font-size: 2rem;
 }
 
 .container {
