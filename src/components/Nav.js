@@ -6,7 +6,6 @@ export default function Nav() {
         <nav className="navbar navbar-expand navbar-dark bg-dark">
             <Link className="navbar-brand" to="/">Games App</Link>
             
-
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
@@ -14,6 +13,9 @@ export default function Nav() {
                     </li>
                     <li className="nav-item">
                         <NavLink className="nav-link" exact to="/games">Games</NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" exact to="/weather">Weather</NavLink>
                     </li>
                 </ul>
             </div>
