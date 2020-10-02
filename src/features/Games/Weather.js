@@ -3,11 +3,9 @@ import React, { useEffect, useState } from 'react';
 export default function Weather() {
     const [weather, setWeather] = useState([]);
   
-
     useEffect(() => {
       fetch('https://api.openweathermap.org/data/2.5/weather?q=Brasov,Ro&appid=c7da641777760054e5ca6164eb47580a')
       .then(res => res.json())
-    //   .then(data => setWeather(data.main))
         .then(results => {
             setWeather({
                temp:results.main.temp,
@@ -23,7 +21,6 @@ export default function Weather() {
         let celsius = temp - 273.15;
         return celsius;
     }
-      //console.log(getTempInC(285));
     return (
         <div>
             <h1>The weather for Brasov</h1>

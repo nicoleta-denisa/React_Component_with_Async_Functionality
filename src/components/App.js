@@ -13,7 +13,6 @@ function App() {
         <div className="container">
             <Router>
                 <Nav />
-
                 <Route exact path="/" component={ () => <h1>Homepage</h1> } />
                 <Route exact path="/games" component={ GamesList } />
                 <Route exact path="/games/:id" component={ GameDetails } />
